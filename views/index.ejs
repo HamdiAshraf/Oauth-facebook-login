@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Buttons</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f2f5;
+        margin: 0;
+      }
+
+      .login-buttons {
+        display: flex;
+        gap: 20px; /* Space between the buttons */
+      }
+
+      .login-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .fb-login-btn {
+        background-color: #1877f2;
+      }
+
+      .fb-login-btn:hover {
+        background-color: #165dbf;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .github-login-btn {
+        background-color: #333;
+      }
+
+      .github-login-btn:hover {
+        background-color: #24292e;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .login-btn img {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-buttons">
+      <a class="login-btn fb-login-btn" href="/auth/facebook">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+          alt="Facebook logo"
+          width="24"
+          height="24"
+        />
+        Login with Facebook
+      </a>
+      <a class="login-btn github-login-btn" href="/auth/github">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+          alt="GitHub logo"
+          width="24"
+          height="24"
+        />
+        Login with GitHub
+      </a>
+    </div>
+  </body>
+</html>
